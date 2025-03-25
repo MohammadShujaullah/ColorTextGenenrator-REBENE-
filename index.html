@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Color Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Text Color Tool</h1>
+    
+    <div class="box">
+        <h3>Edit Text</h3>
+        <textarea id="textInput" placeholder="Type your text here..."></textarea>
+        
+        <h3>Colors</h3>
+        <div class="colors" id="colorPalette"></div>
+        
+        <div class="buttons">
+            <button id="reset">Clear All</button>
+            <button id="copy">Copy Text</button>
+        </div>
+    </div>
+    
+    <div class="box">
+        <h3>Preview</h3>
+        <div class="preview" id="preview">Your colored text will appear here...</div>
+        <p class="info">Select text in the box above and click a color to apply it.</p>
+    </div>
+    
+    <div class="box">
+        <h3>How to Use</h3>
+        <ol>
+            <li>Type your text in the editor</li>
+            <li>Select the text you want to color</li>
+            <li>Click a color from the palette</li>
+            <li>Click "Copy Text" and paste into Discord</li>
+        </ol>
+        <p class="info">Note: Colors only work in Discord desktop app.</p>
+    </div>
+    
+    <div class="copied" id="copiedNotice">Text copied!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
